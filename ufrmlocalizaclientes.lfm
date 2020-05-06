@@ -1,0 +1,111 @@
+object FrmLocalizaClientes: TFrmLocalizaClientes
+  Left = 656
+  Height = 369
+  Top = 312
+  Width = 876
+  Caption = 'Localização de Clientes'
+  ClientHeight = 369
+  ClientWidth = 876
+  LCLVersion = '2.0.8.0'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 300
+    Top = 69
+    Width = 876
+    Align = alBottom
+    Color = clWindow
+    Columns = <    
+      item
+        MaxSize = 100
+        Title.Caption = 'ID'
+        Width = 45
+        FieldName = 'ID'
+      end    
+      item
+        Title.Caption = 'NOME'
+        Width = 250
+        FieldName = 'NOME'
+      end    
+      item
+        Title.Caption = 'ENDERECO'
+        Width = 200
+        FieldName = 'ENDERECO'
+      end    
+      item
+        Title.Caption = 'TELEFONE'
+        Width = 80
+        FieldName = 'TELEFONE'
+      end    
+      item
+        Title.Caption = 'TELEFONE2'
+        Width = 80
+        FieldName = 'TELEFONE2'
+      end    
+      item
+        Title.Caption = 'CIDADE'
+        Width = 100
+        FieldName = 'CIDADE'
+      end    
+      item
+        Title.Caption = 'ESTADO'
+        Width = 50
+        FieldName = 'ESTADO'
+      end>
+    DataSource = FrmDataM.dsPrincipal
+    ReadOnly = True
+    TabOrder = 0
+    OnDblClick = DBGrid1DblClick
+  end
+  object Label1: TLabel
+    Left = 160
+    Height = 15
+    Top = 24
+    Width = 38
+    Caption = 'Buscar:'
+    ParentColor = False
+  end
+  object EdtFiltro: TEdit
+    Left = 208
+    Height = 23
+    Top = 24
+    Width = 576
+    TabOrder = 1
+  end
+  object btnFiltroClientes: TBitBtn
+    Left = 784
+    Height = 48
+    Top = 8
+    Width = 91
+    Images = FrmClientes.ImageList1
+    ImageIndex = 6
+    OnClick = btnFiltroClientesClick
+    TabOrder = 2
+  end
+  object cbxFiltro: TComboBox
+    Left = 48
+    Height = 23
+    Top = 24
+    Width = 100
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'ID'
+      'NOME'
+      'ENDERECO'
+      'TELEFONE'
+      'TELEFONE2'
+      'CIDADE'
+      'ESTADO'
+    )
+    TabOrder = 3
+    Text = 'ID'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 24
+    Width = 30
+    Caption = 'Filtro:'
+    ParentColor = False
+  end
+end

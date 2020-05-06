@@ -1,0 +1,176 @@
+object FrmDataM: TFrmDataM
+  OldCreateOrder = False
+  Height = 397
+  HorizontalOffset = 534
+  VerticalOffset = 226
+  Width = 596
+  PPI = 96
+  object conexaoBD: TZConnection
+    ControlsCodePage = cCP_UTF8
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3050
+    Database = 'C:\Users\Bsoft01\Documents\CRUD\FINANCA.FDB'
+    User = 'sysdba'
+    Password = 'masterkey'
+    Protocol = 'firebird-2.1'
+    LibraryLocation = 'C:\Program Files\Firebird\Firebird_2_1\bin\fbclient.dll'
+    left = 72
+    top = 16
+  end
+  object dsPrincipal: TDataSource
+    DataSet = qrClientes
+    left = 128
+    top = 16
+  end
+  object qrClientes: TZQuery
+    Connection = conexaoBD
+    UpdateObject = upClientes
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM CLIENTES'
+    )
+    Params = <>
+    left = 192
+    top = 16
+    object qrClientesID: TLongintField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrClientesNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
+    object qrClientesENDERECO: TStringField
+      FieldKind = fkData
+      FieldName = 'ENDERECO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 500
+    end
+    object qrClientesTELEFONE: TLongintField
+      FieldKind = fkData
+      FieldName = 'TELEFONE'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qrClientesTELEFONE2: TLongintField
+      FieldKind = fkData
+      FieldName = 'TELEFONE2'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qrClientesCIDADE: TStringField
+      FieldKind = fkData
+      FieldName = 'CIDADE'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qrClientesESTADO: TStringField
+      FieldKind = fkData
+      FieldName = 'ESTADO'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 2
+    end
+  end
+  object upClientes: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM CLIENTES'
+      'WHERE'
+      '  CLIENTES.ID = :OLD_ID'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO CLIENTES'
+      '  (ID, NOME, ENDERECO, TELEFONE, TELEFONE2, CIDADE, ESTADO)'
+      'VALUES'
+      '  (:ID, :NOME, :ENDERECO, :TELEFONE, :TELEFONE2, :CIDADE, :ESTADO)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE CLIENTES SET'
+      '  ID = :ID,'
+      '  NOME = :NOME,'
+      '  ENDERECO = :ENDERECO,'
+      '  TELEFONE = :TELEFONE,'
+      '  TELEFONE2 = :TELEFONE2,'
+      '  CIDADE = :CIDADE,'
+      '  ESTADO = :ESTADO'
+      'WHERE'
+      '  CLIENTES.ID = :OLD_ID'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    left = 272
+    top = 16
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'ID'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'NOME'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'ENDERECO'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'TELEFONE'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'TELEFONE2'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'CIDADE'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'ESTADO'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_ID'
+        ParamType = ptUnknown
+      end>
+  end
+end
