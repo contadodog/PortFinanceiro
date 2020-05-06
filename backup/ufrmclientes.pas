@@ -42,6 +42,7 @@ type
     procedure BtnCanClienteClick(Sender: TObject);
     procedure BtnConClienteClick(Sender: TObject);
     procedure BtnExcClienteClick(Sender: TObject);
+    procedure BtnImpClienteClick(Sender: TObject);
     procedure BtnIncClienteClick(Sender: TObject);
     procedure BtnLocClienteClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -56,6 +57,8 @@ var
   FrmClientes: TFrmClientes;
 
 implementation
+
+uses uFrmImpresaoClientes;
 
 {$R *.lfm}
 
@@ -84,7 +87,6 @@ begin
          habilitaEdicao(False);
          end;
       Except
-        FrmDataM.dsPrincipal.DataSet.Cancel;
         MessageDlg('Como não foi preenchido nenhum campo, o cadastro será cancelado',mtInformation,[mbOK],0);
       end;
 end;
@@ -97,6 +99,11 @@ begin
        controlaBotoes;
        habilitaEdicao(False);
        end;
+end;
+
+procedure TFrmClientes.BtnImpClienteClick(Sender: TObject);
+begin
+  FrmImpressaoClientes.RLReport1.Prepare;
 end;
 
 procedure TFrmClientes.BtnIncClienteClick(Sender: TObject);

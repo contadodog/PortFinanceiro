@@ -87,6 +87,7 @@ object FrmClientes: TFrmClientes
     Layout = blGlyphTop
     Images = ImageList1
     ImageIndex = 4
+    OnClick = BtnImpClienteClick
     TabOrder = 5
   end
   object BtnSairCliente: TBitBtn

@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="7">
+    <Units Count="8">
       <Unit0>
         <Filename Value="Crud.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="64"/>
+        <UsageCount Value="76"/>
       </Unit0>
       <Unit1>
         <Filename Value="ufrmprincipal.pas"/>
@@ -23,7 +23,7 @@
         <UnitName Value="uFrmPrincipal"/>
         <TopLine Value="18"/>
         <CursorPos X="6" Y="43"/>
-        <UsageCount Value="64"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -36,9 +36,9 @@
         <UnitName Value="uFrmClientes"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="103"/>
-        <CursorPos X="73" Y="108"/>
-        <UsageCount Value="64"/>
+        <TopLine Value="104"/>
+        <CursorPos X="41" Y="106"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
@@ -49,10 +49,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="uFrmDataModule"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="19"/>
         <CursorPos X="19"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="71"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -62,10 +62,10 @@
         <ComponentName Value="FrmLocalizaClientes"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="33"/>
         <CursorPos X="32" Y="60"/>
-        <UsageCount Value="39"/>
+        <UsageCount Value="51"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit4>
@@ -74,7 +74,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="2399"/>
         <CursorPos Y="2424"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit5>
       <Unit6>
@@ -82,128 +82,144 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="425"/>
         <CursorPos Y="457"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmImpressaoClientes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmImpresaoClientes"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="17"/>
+        <CursorPos X="44" Y="30"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit7>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="50" Column="15" TopLine="34"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="19" Column="46" TopLine="3"/>
       </Position1>
       <Position2>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="49" Column="15" TopLine="33"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="20" Column="46" TopLine="3"/>
       </Position2>
       <Position3>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="50" Column="63" TopLine="33"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="14" Column="39"/>
       </Position3>
       <Position4>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="140" Column="51" TopLine="118"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="19" Column="55"/>
       </Position4>
       <Position5>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="48" Column="51" TopLine="33"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="20" Column="55"/>
       </Position5>
       <Position6>
-        <Filename Value="ufrmprincipal.pas"/>
-        <Caret Line="43" Column="27" TopLine="18"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="21" Column="55"/>
       </Position6>
       <Position7>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="114" Column="18" TopLine="96"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="13" Column="169"/>
       </Position7>
       <Position8>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="119" Column="52" TopLine="96"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="36" TopLine="8"/>
       </Position8>
       <Position9>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="106" Column="62" TopLine="81"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="35" TopLine="7"/>
       </Position9>
       <Position10>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="114" Column="38" TopLine="112"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="36" TopLine="7"/>
       </Position10>
       <Position11>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="95" Column="26" TopLine="78"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="35" TopLine="7"/>
       </Position11>
       <Position12>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="107" Column="33" TopLine="78"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="36" TopLine="7"/>
       </Position12>
       <Position13>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="37" TopLine="7"/>
       </Position13>
       <Position14>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="145" Column="63" TopLine="121"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="38" TopLine="7"/>
       </Position14>
       <Position15>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="39" TopLine="7"/>
       </Position15>
       <Position16>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
-        <Caret Line="42" Column="63" TopLine="16"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="40" TopLine="7"/>
       </Position16>
       <Position17>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
-        <Caret Line="43" Column="69" TopLine="16"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="41" TopLine="7"/>
       </Position17>
       <Position18>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
-        <Caret Line="51" Column="32" TopLine="28"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="40" TopLine="7"/>
       </Position18>
       <Position19>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
-        <Caret Line="54" Column="65" TopLine="28"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="41" TopLine="7"/>
       </Position19>
       <Position20>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
-        <Caret Line="60" Column="8" TopLine="30"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="42" TopLine="8"/>
       </Position20>
       <Position21>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
-        <Caret Line="54" Column="30" TopLine="30"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="43" TopLine="9"/>
       </Position21>
       <Position22>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
-        <Caret Line="30" Column="39" TopLine="21"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="44" TopLine="10"/>
       </Position22>
       <Position23>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
-        <Caret Line="54" Column="73" TopLine="32"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="20" Column="160" TopLine="11"/>
       </Position23>
       <Position24>
-        <Filename Value="ufrmlocalizaclientes.pas"/>
-        <Caret Line="57" Column="64" TopLine="33"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="21" Column="160" TopLine="11"/>
       </Position24>
       <Position25>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="125" Column="36" TopLine="114"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="22" Column="160" TopLine="11"/>
       </Position25>
       <Position26>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="124" Column="27" TopLine="111"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="23" Column="160" TopLine="11"/>
       </Position26>
       <Position27>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="148" Column="38" TopLine="134"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="24" Column="160" TopLine="11"/>
       </Position27>
       <Position28>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="94" Column="9" TopLine="82"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="25" Column="160" TopLine="11"/>
       </Position28>
       <Position29>
-        <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="122" Column="9" TopLine="111"/>
+        <Filename Value="ufrmimpresaoclientes.pas"/>
+        <Caret Line="26" Column="160" TopLine="11"/>
       </Position29>
       <Position30>
         <Filename Value="ufrmclientes.pas"/>
-        <Caret Line="94" Column="7" TopLine="92"/>
+        <Caret Line="106" Column="33" TopLine="104"/>
       </Position30>
     </JumpHistory>
     <RunParams>

@@ -42,6 +42,7 @@ type
     procedure BtnCanClienteClick(Sender: TObject);
     procedure BtnConClienteClick(Sender: TObject);
     procedure BtnExcClienteClick(Sender: TObject);
+    procedure BtnImpClienteClick(Sender: TObject);
     procedure BtnIncClienteClick(Sender: TObject);
     procedure BtnLocClienteClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -56,6 +57,8 @@ var
   FrmClientes: TFrmClientes;
 
 implementation
+
+uses uFrmImpresaoClientes;
 
 {$R *.lfm}
 
@@ -96,6 +99,13 @@ begin
        controlaBotoes;
        habilitaEdicao(False);
        end;
+end;
+
+procedure TFrmClientes.BtnImpClienteClick(Sender: TObject);
+begin
+  FrmImpressaoClientes.RLReport1.Prepare;
+  FrmImpressaoClientes.RLReport1.PreviewModal;
+
 end;
 
 procedure TFrmClientes.BtnIncClienteClick(Sender: TObject);
