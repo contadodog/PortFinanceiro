@@ -18,9 +18,8 @@ type
     BtnConTipoPag: TBitBtn;
     BtnExcTipoPag: TBitBtn;
     BtnIncTipoPag: TBitBtn;
-    BtnSairCliente: TBitBtn;
+    BtnSairTipPag: TBitBtn;
     cbxTipoPag: TDBComboBox;
-    DataSource1: TDataSource;
     DBEdit1: TDBEdit;
     DBGrid1: TDBGrid;
     EdtDescTipoPag: TDBEdit;

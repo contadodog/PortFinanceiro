@@ -1,20 +1,21 @@
 object FrmTipoPagamento: TFrmTipoPagamento
   Left = 638
-  Height = 342
+  Height = 345
   Top = 337
-  Width = 581
+  Width = 583
+  BorderIcons = [biSystemMenu]
   Caption = 'Tipos de Pagamento'
-  ClientHeight = 342
-  ClientWidth = 581
+  ClientHeight = 345
+  ClientWidth = 583
   LCLVersion = '2.0.8.0'
   object Panel1: TPanel
     Left = 0
     Height = 80
     Top = 0
-    Width = 581
+    Width = 583
     Align = alTop
     ClientHeight = 80
-    ClientWidth = 581
+    ClientWidth = 583
     TabOrder = 0
     object BtnIncTipoPag: TBitBtn
       Left = 8
@@ -77,7 +78,7 @@ object FrmTipoPagamento: TFrmTipoPagamento
     OnClick = BtnCanTipoPagClick
     TabOrder = 4
   end
-  object BtnSairCliente: TBitBtn
+  object BtnSairTipPag: TBitBtn
     Left = 480
     Height = 64
     Top = 8
@@ -155,8 +156,8 @@ object FrmTipoPagamento: TFrmTipoPagamento
   object DBGrid1: TDBGrid
     Left = 0
     Height = 142
-    Top = 200
-    Width = 581
+    Top = 203
+    Width = 583
     Align = alBottom
     Color = clWindow
     Columns = <    
@@ -1082,9 +1083,5 @@ object FrmTipoPagamento: TFrmTipoPagamento
       0000000000000000000000000000000000000000000000000000000000004D4D
       4E259C9C9EE5707173E115151522
     }
-  end
-  object DataSource1: TDataSource
-    left = 632
-    top = 296
   end
 end

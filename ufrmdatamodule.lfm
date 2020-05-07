@@ -264,4 +264,124 @@ object FrmDataM: TFrmDataM
         ParamType = ptUnknown
       end>
   end
+  object dsFormasPagamento: TDataSource
+    DataSet = qrFormPag
+    left = 120
+    top = 192
+  end
+  object qrFormPag: TZQuery
+    Connection = conexaoBD
+    UpdateObject = upFormPag
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM FORMAS_PAGAMENTO'
+    )
+    Params = <>
+    left = 224
+    top = 192
+    object qrFormPagID: TLongintField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrFormPagDESCRICAO: TStringField
+      FieldKind = fkData
+      FieldName = 'DESCRICAO'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
+    object qrFormPagTIPO: TStringField
+      FieldKind = fkData
+      FieldName = 'TIPO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object qrFormPagVENCIMENTO: TLongintField
+      FieldKind = fkData
+      FieldName = 'VENCIMENTO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrFormPagPARCELAS: TSmallintField
+      FieldKind = fkData
+      FieldName = 'PARCELAS'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+  end
+  object upFormPag: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM FORMAS_PAGAMENTO'
+      'WHERE'
+      '  FORMAS_PAGAMENTO.ID = :OLD_ID'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO FORMAS_PAGAMENTO'
+      '  (ID, DESCRICAO, TIPO, VENCIMENTO, PARCELAS)'
+      'VALUES'
+      '  (:ID, :DESCRICAO, :TIPO, :VENCIMENTO, :PARCELAS)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE FORMAS_PAGAMENTO SET'
+      '  ID = :ID,'
+      '  DESCRICAO = :DESCRICAO,'
+      '  TIPO = :TIPO,'
+      '  VENCIMENTO = :VENCIMENTO,'
+      '  PARCELAS = :PARCELAS'
+      'WHERE'
+      '  FORMAS_PAGAMENTO.ID = :OLD_ID'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    left = 336
+    top = 192
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'ID'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'DESCRICAO'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'TIPO'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'VENCIMENTO'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'PARCELAS'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_ID'
+        ParamType = ptUnknown
+      end>
+  end
 end

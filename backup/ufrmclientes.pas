@@ -47,8 +47,7 @@ type
     procedure BtnLocClienteClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
-    //procedure controlaBotoes;
-    //procedure habilitaEdicao(Status:Boolean);
+
   public
         procedure controlaBotoesClientes;
         procedure habilitaEdicaoClientes(Status:Boolean);

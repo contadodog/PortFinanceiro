@@ -3,6 +3,7 @@ object FrmContasReceber: TFrmContasReceber
   Height = 289
   Top = 270
   Width = 790
+  BorderIcons = [biSystemMenu]
   Caption = 'Contas a Receber'
   ClientHeight = 289
   ClientWidth = 790

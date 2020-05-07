@@ -3,6 +3,7 @@ object FrmClientes: TFrmClientes
   Height = 215
   Top = 202
   Width = 776
+  BorderIcons = [biSystemMenu]
   Caption = 'Cadastro de Clientes'
   ClientHeight = 215
   ClientWidth = 776

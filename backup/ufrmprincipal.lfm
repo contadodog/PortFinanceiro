@@ -1,10 +1,11 @@
 object FrmPrincipal: TFrmPrincipal
   Left = 814
-  Height = 315
+  Height = 214
   Top = 240
   Width = 605
+  BorderIcons = []
   Caption = 'CRUD'
-  ClientHeight = 295
+  ClientHeight = 194
   ClientWidth = 605
   Menu = MenuPrincipal
   LCLVersion = '2.0.8.0'
@@ -1542,6 +1543,7 @@ object FrmPrincipal: TFrmPrincipal
         end
         object MenuFormasPagamento: TMenuItem
           Caption = 'Formas de Pagamento'
+          OnClick = MenuFormasPagamentoClick
         end
       end
     end

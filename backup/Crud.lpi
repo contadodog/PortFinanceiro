@@ -43,7 +43,7 @@
         <PackageName Value="LCL"/>
       </Item5>
     </RequiredPackages>
-    <Units Count="8">
+    <Units Count="9">
       <Unit0>
         <Filename Value="Crud.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -103,6 +103,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFrmTipoPagamento"/>
       </Unit7>
+      <Unit8>
+        <Filename Value="ufrmformaspagamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmFormasPagamento"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmFormasPagamento"/>
+      </Unit8>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

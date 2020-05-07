@@ -12,6 +12,7 @@ type
   { TFrmDataM }
 
   TFrmDataM = class(TDataModule)
+    dsFormasPagamento: TDataSource;
     dsTipoPagamento: TDataSource;
     dsPrincipal: TDataSource;
     dsClientes: TDataSource;
@@ -23,6 +24,11 @@ type
     qrClientesNOME: TStringField;
     qrClientesTELEFONE: TLongintField;
     qrClientesTELEFONE2: TLongintField;
+    qrFormPagDESCRICAO: TStringField;
+    qrFormPagID: TLongintField;
+    qrFormPagPARCELAS: TSmallintField;
+    qrFormPagTIPO: TStringField;
+    qrFormPagVENCIMENTO: TLongintField;
     qrTipPagCODIGO: TLongintField;
     qrTipPagDESCRICAO: TStringField;
     qrTipPagTIPO: TStringField;
@@ -39,6 +45,8 @@ type
     upClientes: TZUpdateSQL;
     qrTipPag: TZQuery;
     upTipoPag: TZUpdateSQL;
+    qrFormPag: TZQuery;
+    upFormPag: TZUpdateSQL;
   private
 
   public
@@ -53,6 +61,8 @@ implementation
 {$R *.lfm}
 
 { TFrmDataM }
+
+
 
 
 

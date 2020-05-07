@@ -28,6 +28,7 @@ type
     Panel1: TPanel;
     procedure BtnClientesClick(Sender: TObject);
     procedure Clientes_ForneClick(Sender: TObject);
+    procedure MenuFormasPagamentoClick(Sender: TObject);
     procedure MenuTipoPagamentoClick(Sender: TObject);
     procedure Image1Click(Sender: TObject);
   private
@@ -40,6 +41,8 @@ var
   FrmPrincipal: TFrmPrincipal;
 
 implementation
+
+uses uFrmFormasPagamento;
 
 {$R *.lfm}
 
@@ -54,6 +57,11 @@ end;
 procedure TFrmPrincipal.Clientes_ForneClick(Sender: TObject);
 begin
   FrmClientes.ShowModal;
+end;
+
+procedure TFrmPrincipal.MenuFormasPagamentoClick(Sender: TObject);
+begin
+     FrmFormasPagamento.showModal;
 end;
 
 procedure TFrmPrincipal.MenuTipoPagamentoClick(Sender: TObject);
