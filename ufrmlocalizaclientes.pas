@@ -42,8 +42,8 @@ procedure TFrmLocalizaClientes.btnFiltroClientesClick(Sender: TObject);
 begin
   FrmDataM.qrClientes.Close;
   FrmDataM.qrClientes.SQL.Clear;
-  FrmDataM.qrClientes.sql.Add('select * from clientes where NOME like :pPesquisa');
-  FrmDataM.qrClientes.ParamByName('pFiltro').AsString:= cbxFiltro.Text;
+  FrmDataM.qrClientes.sql.Add('select * from clientes where Nome like :pPesquisa');
+  //FrmDataM.qrClientes.ParamByName('pFiltro').AsString:= cbxFiltro.Items.Strings[cbxFiltro.ItemIndex];
   FrmDataM.qrClientes.ParamByName('pPesquisa').AsString:= '%' + EdtFiltro.Text + '%';
   FrmDataM.qrClientes.Open;
 

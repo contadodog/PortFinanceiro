@@ -47,10 +47,10 @@ type
     procedure BtnLocClienteClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
-    procedure controlaBotoes;
-    procedure habilitaEdicao(Status:Boolean);
-  public
 
+  public
+        procedure controlaBotoesClientes;
+        procedure habilitaEdicaoClientes(Status:Boolean);
   end;
 
 var
@@ -67,15 +67,15 @@ uses uFrmImpresaoClientes;
 procedure TFrmClientes.BtnAltClienteClick(Sender: TObject);
 begin
     FrmDataM.dsPrincipal.DataSet.Edit;
-    controlaBotoes;
-    habilitaEdicao(True);
+    controlaBotoesClientes;
+    habilitaEdicaoClientes(True);
 end;
 
 procedure TFrmClientes.BtnCanClienteClick(Sender: TObject);
 begin
       FrmDataM.dsPrincipal.DataSet.Cancel;
-      controlaBotoes;
-      habilitaEdicao(False);
+      controlaBotoesClientes;
+      habilitaEdicaoClientes(False);
 end;
 
 procedure TFrmClientes.BtnConClienteClick(Sender: TObject);
@@ -83,8 +83,8 @@ begin
       try
          begin
          FrmDataM.dsPrincipal.DataSet.Post;
-         controlaBotoes;
-         habilitaEdicao(False);
+         controlaBotoesClientes;
+         habilitaEdicaoClientes(False);
          end;
       Except
         MessageDlg('Como não foi preenchido nenhum campo, o cadastro será cancelado',mtInformation,[mbOK],0);
@@ -96,8 +96,8 @@ begin
      if MessageDlg('Você deseja realmente excluir esse Cliente?', mtWarning,[mbYes,mbNo],0) = mrYes then
        begin
        FrmDataM.dsPrincipal.DataSet.Delete;
-       controlaBotoes;
-       habilitaEdicao(False);
+       controlaBotoesClientes;
+       habilitaEdicaoClientes(False);
        end;
 end;
 
@@ -111,24 +111,24 @@ end;
 procedure TFrmClientes.BtnIncClienteClick(Sender: TObject);
 begin
   FrmDataM.dsPrincipal.DataSet.Insert;
-  controlaBotoes;
-  habilitaEdicao(True);
+  controlaBotoesClientes; ;
+  habilitaEdicaoClientes(True);
 end;
 
 procedure TFrmClientes.BtnLocClienteClick(Sender: TObject);
 begin
-      controlaBotoes;
-      habilitaEdicao(False);
+      controlaBotoesClientes;
+      habilitaEdicaoClientes(False);
       FrmLocalizaClientes.ShowModal;
 end;
 
 procedure TFrmClientes.FormShow(Sender: TObject);
 begin
-  controlaBotoes;
-  habilitaEdicao(False);
+    controlaBotoesClientes;
+    habilitaEdicaoClientes(False);
 end;
 
-procedure TFrmClientes.controlaBotoes;
+procedure TFrmClientes.controlaBotoesClientes;
 begin
      BtnIncCliente.Enabled:= not (FrmDataM.dsPrincipal.State in [dsInsert, dsEdit]);
      BtnExcCliente.Enabled:= not (FrmDataM.dsPrincipal.DataSet.State in [dsInsert, dsEdit]);
@@ -138,7 +138,7 @@ begin
      BtnConCliente.Enabled:= (FrmDataM.dsPrincipal.State in [dsInsert, dsEdit]);
 end;
 
-procedure TFrmClientes.habilitaEdicao(Status: Boolean);
+procedure TFrmClientes.habilitaEdicaoClientes(Status: Boolean);
 
 var
   i: integer;

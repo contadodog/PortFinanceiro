@@ -8,7 +8,7 @@ uses
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, zplain, zcomponent, uFrmPrincipal, uFrmClientes, uFrmDataModule,
-  ufrmlocalizaclientes, uFrmImpresaoClientes
+  ufrmlocalizaclientes, uFrmImpresaoClientes, uFrmContasAReceber, uFrmTipoPagamento
   { you can add units after this };
 
 {$R *.res}
@@ -22,6 +22,8 @@ begin
   Application.CreateForm(TFrmDataM, FrmDataM);
   Application.CreateForm(TFrmLocalizaClientes, FrmLocalizaClientes);
   Application.CreateForm(TFrmImpressaoClientes, FrmImpressaoClientes);
+  Application.CreateForm(TFrmContasReceber, FrmContasReceber);
+  Application.CreateForm(TFrmTipoPagamento, FrmTipoPagamento);
   Application.Run;
 end.
 

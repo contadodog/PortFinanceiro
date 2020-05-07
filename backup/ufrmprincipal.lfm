@@ -4,8 +4,9 @@ object FrmPrincipal: TFrmPrincipal
   Top = 240
   Width = 605
   Caption = 'CRUD'
-  ClientHeight = 315
+  ClientHeight = 295
   ClientWidth = 605
+  Menu = MenuPrincipal
   LCLVersion = '2.0.8.0'
   object Panel1: TPanel
     Left = 0
@@ -78,8 +79,8 @@ object FrmPrincipal: TFrmPrincipal
   object ImageList1: TImageList
     Height = 48
     Width = 48
-    left = 8
-    top = 96
+    left = 32
+    top = 104
     Bitmap = {
       4C69050000003000000030000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1523,5 +1524,26 @@ object FrmPrincipal: TFrmPrincipal
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000
     }
+  end
+  object MenuPrincipal: TMainMenu
+    left = 146
+    top = 105
+    object Cadastros: TMenuItem
+      Caption = 'Cadastros'
+      object Clientes_Forne: TMenuItem
+        Caption = 'Clientes/Fornecedores'
+        OnClick = Clientes_ForneClick
+      end
+      object Financeiro: TMenuItem
+        Caption = 'Financeiro'
+        object MenuTipoPagamento: TMenuItem
+          Caption = 'Tipo de Pagamento'
+          OnClick = MenuTipoPagamentoClick
+        end
+        object MenuFormasPagamento: TMenuItem
+          Caption = 'Formas de Pagamento'
+        end
+      end
+    end
   end
 end

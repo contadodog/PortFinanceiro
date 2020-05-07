@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, Buttons,
-  uFrmClientes;
+  Menus, uFrmClientes, uFrmTipoPagamento;
 
 type
 
@@ -19,8 +19,16 @@ type
     BtnPagar: TBitBtn;
     BtnRelatorios: TBitBtn;
     ImageList1: TImageList;
+    Cadastros: TMenuItem;
+    Clientes_Forne: TMenuItem;
+    Financeiro: TMenuItem;
+    MenuTipoPagamento: TMenuItem;
+    MenuFormasPagamento: TMenuItem;
+    MenuPrincipal: TMainMenu;
     Panel1: TPanel;
     procedure BtnClientesClick(Sender: TObject);
+    procedure Clientes_ForneClick(Sender: TObject);
+    procedure MenuTipoPagamentoClick(Sender: TObject);
     procedure Image1Click(Sender: TObject);
   private
 
@@ -41,6 +49,16 @@ implementation
 procedure TFrmPrincipal.BtnClientesClick(Sender: TObject);
 begin
      FrmClientes.ShowModal;
+end;
+
+procedure TFrmPrincipal.Clientes_ForneClick(Sender: TObject);
+begin
+  FrmClientes.ShowModal;
+end;
+
+procedure TFrmPrincipal.MenuTipoPagamentoClick(Sender: TObject);
+begin
+  FrmTipoPagamento.showModal;
 end;
 
 procedure TFrmPrincipal.Image1Click(Sender: TObject);

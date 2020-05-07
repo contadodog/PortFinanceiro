@@ -42,8 +42,8 @@ procedure TFrmLocalizaClientes.btnFiltroClientesClick(Sender: TObject);
 begin
   FrmDataM.qrClientes.Close;
   FrmDataM.qrClientes.SQL.Clear;
-  FrmDataM.qrClientes.sql.Add('select * from clientes where NOME like :pPesquisa');
-  FrmDataM.qrClientes.ParamByName('pFiltro').AsString:= cbxFiltro.Text;
+  FrmDataM.qrClientes.sql.Add('select * from clientes where :pFiltro like :pPesquisa');
+  FrmDataM.qrClientes.ParamByName('pFiltro').AsString:= cbxFiltro.Items.Strings[cbxFiltro.ItemIndex];
   FrmDataM.qrClientes.ParamByName('pPesquisa').AsString:= '%' + EdtFiltro.Text + '%';
   FrmDataM.qrClientes.Open;
 
@@ -52,12 +52,12 @@ end;
 procedure TFrmLocalizaClientes.DBGrid1DblClick(Sender: TObject);
 begin
      FrmClientes.edtNome.Text:= IntToStr(FrmDataM.qrClientes.FieldByName('ID').AsInteger);
-     FrmClientes.edtNome:= FrmDataM.qrClientes.FieldByName('NOME').AsString;
-     FrmClientes.edtEndereco:= FrmDataM.qrClientes.FieldByName('ENDERECO').Value;
-     FrmClientes.edtTelefone:= IntToStr(FrmDataM.qrClientes.FieldByName('TELEFONE').AsInteger);
-     FrmClientes.edtTelefone2:= IntToStr(FrmDataM.qrClientes.FieldByName('TELEFONE').AsInteger);
-     FrmClientes.edtCidade:= FrmDataM.qrClientes.FieldByName('CIDADE').AsString;
-     FrmClientes.edtEstado:= FrmDataM.qrClientes.FieldByName('ESTADO').AsString;
+     FrmClientes.edtNome.Text:= FrmDataM.qrClientes.FieldByName('NOME').AsString;
+     FrmClientes.edtEndereco.Text:= FrmDataM.qrClientes.FieldByName('ENDERECO').Value;
+     FrmClientes.edtTelefone.Text:= IntToStr(FrmDataM.qrClientes.FieldByName('TELEFONE').AsInteger);
+     FrmClientes.edtTelefone2.Text:= IntToStr(FrmDataM.qrClientes.FieldByName('TELEFONE').AsInteger);
+     FrmClientes.edtCidade.Text:= FrmDataM.qrClientes.FieldByName('CIDADE').AsString;
+     FrmClientes.edtEstado.Text:= FrmDataM.qrClientes.FieldByName('ESTADO').AsString;
      FrmLocalizaClientes.close;
 end;
 

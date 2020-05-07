@@ -1,24 +1,23 @@
-object FrmClientes: TFrmClientes
-  Left = 790
-  Height = 215
-  Top = 202
-  Width = 776
-  Caption = 'Cadastro de Clientes'
-  ClientHeight = 215
-  ClientWidth = 776
-  OnShow = FormShow
+object FrmContasReceber: TFrmContasReceber
+  Left = 993
+  Height = 289
+  Top = 270
+  Width = 790
+  Caption = 'Contas a Receber'
+  ClientHeight = 289
+  ClientWidth = 790
   LCLVersion = '2.0.8.0'
   object Panel1: TPanel
     Left = 0
     Height = 72
     Top = 0
-    Width = 776
+    Width = 790
     Align = alTop
     ClientHeight = 72
-    ClientWidth = 776
-    TabOrder = 9
+    ClientWidth = 790
+    TabOrder = 0
     object BtnIncCliente: TBitBtn
-      Left = 8
+      Left = 0
       Height = 64
       Top = 0
       Width = 83
@@ -26,36 +25,57 @@ object FrmClientes: TFrmClientes
       Layout = blGlyphTop
       Images = ImageList1
       ImageIndex = 2
-      OnClick = BtnIncClienteClick
       TabOrder = 0
     end
-  end
-  object BtnExcCliente: TBitBtn
-    Left = 96
-    Height = 64
-    Top = 0
-    Width = 91
-    Caption = 'Excluir'
-    Layout = blGlyphTop
-    Images = ImageList1
-    ImageIndex = 3
-    OnClick = BtnExcClienteClick
-    TabOrder = 10
-  end
-  object BtnAltCliente: TBitBtn
-    Left = 192
-    Height = 64
-    Top = 0
-    Width = 91
-    Caption = 'Alterar'
-    Layout = blGlyphTop
-    Images = ImageList1
-    ImageIndex = 1
-    OnClick = BtnAltClienteClick
-    TabOrder = 11
+    object BtnExcCliente: TBitBtn
+      Left = 88
+      Height = 64
+      Top = 0
+      Width = 91
+      Caption = 'Excluir'
+      Layout = blGlyphTop
+      Images = ImageList1
+      ImageIndex = 3
+      TabOrder = 1
+    end
+    object BtnAltCliente: TBitBtn
+      Left = 184
+      Height = 64
+      Top = 0
+      Width = 91
+      Caption = 'Alterar'
+      Layout = blGlyphTop
+      Images = ImageList1
+      ImageIndex = 1
+      TabOrder = 2
+    end
+    object BtnImpCliente: TBitBtn
+      Left = 584
+      Height = 64
+      Top = 0
+      Width = 91
+      Caption = 'Imprimir'
+      Layout = blGlyphTop
+      Images = ImageList1
+      ImageIndex = 4
+      TabOrder = 3
+    end
+    object BtnSairCliente: TBitBtn
+      Left = 688
+      Height = 64
+      Top = 0
+      Width = 91
+      Caption = 'Sair'
+      Kind = bkClose
+      Layout = blGlyphTop
+      ModalResult = 11
+      Images = ImageList1
+      ImageIndex = 5
+      TabOrder = 4
+    end
   end
   object BtnConCliente: TBitBtn
-    Left = 288
+    Left = 280
     Height = 64
     Top = 0
     Width = 91
@@ -63,8 +83,7 @@ object FrmClientes: TFrmClientes
     Layout = blGlyphTop
     Images = ImageList1
     ImageIndex = 0
-    OnClick = BtnConClienteClick
-    TabOrder = 7
+    TabOrder = 1
   end
   object BtnCanCliente: TBitBtn
     Left = 384
@@ -75,33 +94,7 @@ object FrmClientes: TFrmClientes
     Layout = blGlyphTop
     Images = ImageList1
     ImageIndex = 3
-    OnClick = BtnCanClienteClick
-    TabOrder = 8
-  end
-  object BtnImpCliente: TBitBtn
-    Left = 576
-    Height = 64
-    Top = 0
-    Width = 91
-    Caption = 'Imprimir'
-    Layout = blGlyphTop
-    Images = ImageList1
-    ImageIndex = 4
-    OnClick = BtnImpClienteClick
-    TabOrder = 12
-  end
-  object BtnSairCliente: TBitBtn
-    Left = 672
-    Height = 64
-    Top = 0
-    Width = 91
-    Caption = 'Sair'
-    Kind = bkClose
-    Layout = blGlyphTop
-    ModalResult = 11
-    Images = ImageList1
-    ImageIndex = 5
-    TabOrder = 13
+    TabOrder = 2
   end
   object BtnLocCliente: TBitBtn
     Left = 480
@@ -112,155 +105,45 @@ object FrmClientes: TFrmClientes
     Layout = blGlyphTop
     Images = ImageList1
     ImageIndex = 6
-    OnClick = BtnLocClienteClick
-    TabOrder = 14
+    TabOrder = 3
   end
   object Label1: TLabel
-    Left = 120
+    Left = 8
     Height = 15
     Top = 80
-    Width = 36
-    Caption = 'Nome:'
+    Width = 34
+    Caption = 'Label1'
     ParentColor = False
   end
   object Label2: TLabel
     Left = 8
     Height = 15
-    Top = 108
-    Width = 52
-    Caption = 'Endereço:'
+    Top = 112
+    Width = 34
+    Caption = 'Label2'
     ParentColor = False
   end
   object Label3: TLabel
     Left = 8
     Height = 15
-    Top = 136
-    Width = 47
-    Caption = 'Telefone:'
+    Top = 144
+    Width = 34
+    Caption = 'Label3'
     ParentColor = False
   end
   object Label4: TLabel
-    Left = 15
+    Left = 8
     Height = 15
-    Top = 168
-    Width = 40
-    Caption = 'Cidade:'
+    Top = 184
+    Width = 34
+    Caption = 'Label4'
     ParentColor = False
-  end
-  object Label5: TLabel
-    Left = 512
-    Height = 15
-    Top = 168
-    Width = 38
-    Caption = 'Estado:'
-    ParentColor = False
-  end
-  object Label6: TLabel
-    Left = 352
-    Height = 15
-    Top = 136
-    Width = 56
-    Caption = 'Telefone 2:'
-    ParentColor = False
-  end
-  object edtNome: TDBEdit
-    Left = 160
-    Height = 23
-    Top = 80
-    Width = 600
-    DataField = 'NOME'
-    DataSource = FrmDataM.dsPrincipal
-    CharCase = ecNormal
-    MaxLength = 100
-    TabOrder = 1
-  end
-  object edtEndereco: TDBEdit
-    Left = 64
-    Height = 23
-    Top = 108
-    Width = 696
-    DataField = 'ENDERECO'
-    DataSource = FrmDataM.dsPrincipal
-    CharCase = ecNormal
-    MaxLength = 500
-    TabOrder = 2
-  end
-  object edtTelefone: TDBEdit
-    Left = 64
-    Height = 23
-    Top = 136
-    Width = 280
-    DataField = 'TELEFONE'
-    DataSource = FrmDataM.dsPrincipal
-    Alignment = taRightJustify
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 3
-  end
-  object edtTelefone2: TDBEdit
-    Left = 416
-    Height = 23
-    Top = 136
-    Width = 344
-    DataField = 'TELEFONE2'
-    DataSource = FrmDataM.dsPrincipal
-    Alignment = taRightJustify
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 4
-  end
-  object edtCidade: TDBEdit
-    Left = 64
-    Height = 23
-    Top = 168
-    Width = 432
-    DataField = 'CIDADE'
-    DataSource = FrmDataM.dsPrincipal
-    CharCase = ecNormal
-    MaxLength = 100
-    TabOrder = 5
-  end
-  object edtEstado: TDBComboBox
-    Left = 560
-    Height = 23
-    Top = 168
-    Width = 100
-    DataField = 'ESTADO'
-    DataSource = FrmDataM.dsPrincipal
-    ItemHeight = 15
-    Items.Strings = (
-      'PR'
-      'SC'
-      'RS'
-    )
-    MaxLength = 0
-    TabOrder = 6
-  end
-  object Label7: TLabel
-    Left = 41
-    Height = 15
-    Top = 80
-    Width = 14
-    Caption = 'ID:'
-    ParentColor = False
-  end
-  object edtID: TDBEdit
-    Left = 64
-    Height = 23
-    Top = 80
-    Width = 48
-    DataField = 'ID'
-    DataSource = FrmDataM.dsPrincipal
-    Alignment = taRightJustify
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 0
   end
   object ImageList1: TImageList
     Height = 32
     Width = 32
-    left = 728
-    top = 168
+    left = 760
+    top = 232
     Bitmap = {
       4C69070000002000000020000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

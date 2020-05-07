@@ -16,7 +16,7 @@ object FrmClientes: TFrmClientes
     Align = alTop
     ClientHeight = 72
     ClientWidth = 776
-    TabOrder = 0
+    TabOrder = 9
     object BtnIncCliente: TBitBtn
       Left = 8
       Height = 64
@@ -40,7 +40,7 @@ object FrmClientes: TFrmClientes
     Images = ImageList1
     ImageIndex = 3
     OnClick = BtnExcClienteClick
-    TabOrder = 1
+    TabOrder = 10
   end
   object BtnAltCliente: TBitBtn
     Left = 192
@@ -52,7 +52,7 @@ object FrmClientes: TFrmClientes
     Images = ImageList1
     ImageIndex = 1
     OnClick = BtnAltClienteClick
-    TabOrder = 2
+    TabOrder = 11
   end
   object BtnConCliente: TBitBtn
     Left = 288
@@ -64,7 +64,7 @@ object FrmClientes: TFrmClientes
     Images = ImageList1
     ImageIndex = 0
     OnClick = BtnConClienteClick
-    TabOrder = 3
+    TabOrder = 7
   end
   object BtnCanCliente: TBitBtn
     Left = 384
@@ -76,7 +76,7 @@ object FrmClientes: TFrmClientes
     Images = ImageList1
     ImageIndex = 3
     OnClick = BtnCanClienteClick
-    TabOrder = 4
+    TabOrder = 8
   end
   object BtnImpCliente: TBitBtn
     Left = 576
@@ -88,7 +88,7 @@ object FrmClientes: TFrmClientes
     Images = ImageList1
     ImageIndex = 4
     OnClick = BtnImpClienteClick
-    TabOrder = 5
+    TabOrder = 12
   end
   object BtnSairCliente: TBitBtn
     Left = 672
@@ -101,7 +101,7 @@ object FrmClientes: TFrmClientes
     ModalResult = 11
     Images = ImageList1
     ImageIndex = 5
-    TabOrder = 6
+    TabOrder = 13
   end
   object BtnLocCliente: TBitBtn
     Left = 480
@@ -113,7 +113,7 @@ object FrmClientes: TFrmClientes
     Images = ImageList1
     ImageIndex = 6
     OnClick = BtnLocClienteClick
-    TabOrder = 7
+    TabOrder = 14
   end
   object Label1: TLabel
     Left = 120
@@ -172,7 +172,7 @@ object FrmClientes: TFrmClientes
     DataSource = FrmDataM.dsPrincipal
     CharCase = ecNormal
     MaxLength = 100
-    TabOrder = 8
+    TabOrder = 1
   end
   object edtEndereco: TDBEdit
     Left = 64
@@ -183,7 +183,7 @@ object FrmClientes: TFrmClientes
     DataSource = FrmDataM.dsPrincipal
     CharCase = ecNormal
     MaxLength = 500
-    TabOrder = 9
+    TabOrder = 2
   end
   object edtTelefone: TDBEdit
     Left = 64
@@ -195,7 +195,7 @@ object FrmClientes: TFrmClientes
     Alignment = taRightJustify
     CharCase = ecNormal
     MaxLength = 0
-    TabOrder = 10
+    TabOrder = 3
   end
   object edtTelefone2: TDBEdit
     Left = 416
@@ -207,7 +207,7 @@ object FrmClientes: TFrmClientes
     Alignment = taRightJustify
     CharCase = ecNormal
     MaxLength = 0
-    TabOrder = 11
+    TabOrder = 4
   end
   object edtCidade: TDBEdit
     Left = 64
@@ -218,7 +218,7 @@ object FrmClientes: TFrmClientes
     DataSource = FrmDataM.dsPrincipal
     CharCase = ecNormal
     MaxLength = 100
-    TabOrder = 12
+    TabOrder = 5
   end
   object edtEstado: TDBComboBox
     Left = 560
@@ -234,7 +234,7 @@ object FrmClientes: TFrmClientes
       'RS'
     )
     MaxLength = 0
-    TabOrder = 13
+    TabOrder = 6
   end
   object Label7: TLabel
     Left = 41
@@ -254,7 +254,7 @@ object FrmClientes: TFrmClientes
     Alignment = taRightJustify
     CharCase = ecNormal
     MaxLength = 0
-    TabOrder = 14
+    TabOrder = 0
   end
   object ImageList1: TImageList
     Height = 32

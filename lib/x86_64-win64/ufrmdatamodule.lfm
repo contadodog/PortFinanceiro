@@ -1,12 +1,13 @@
 object FrmDataM: TFrmDataM
   OldCreateOrder = False
   Height = 397
-  HorizontalOffset = 534
-  VerticalOffset = 226
+  HorizontalOffset = 789
+  VerticalOffset = 258
   Width = 596
   PPI = 96
   object conexaoBD: TZConnection
     ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
     Properties.Strings = (
       'AutoEncodeStrings=ON'
     )
@@ -18,12 +19,12 @@ object FrmDataM: TFrmDataM
     Password = 'masterkey'
     Protocol = 'firebird-2.1'
     LibraryLocation = 'C:\Program Files\Firebird\Firebird_2_1\bin\fbclient.dll'
-    left = 72
+    left = 48
     top = 16
   end
   object dsPrincipal: TDataSource
     DataSet = qrClientes
-    left = 128
+    left = 120
     top = 16
   end
   object qrClientes: TZQuery
@@ -34,7 +35,7 @@ object FrmDataM: TFrmDataM
       'SELECT * FROM CLIENTES'
     )
     Params = <>
-    left = 192
+    left = 224
     top = 16
     object qrClientesID: TLongintField
       FieldKind = fkData
@@ -129,7 +130,7 @@ object FrmDataM: TFrmDataM
       '  CLIENTES.ID = :OLD_ID'
     )
     UseSequenceFieldForRefreshSQL = False
-    left = 272
+    left = 336
     top = 16
     ParamData = <    
       item
@@ -170,6 +171,96 @@ object FrmDataM: TFrmDataM
       item
         DataType = ftUnknown
         Name = 'OLD_ID'
+        ParamType = ptUnknown
+      end>
+  end
+  object dsTipoPagamento: TDataSource
+    DataSet = qrTipPag
+    left = 120
+    top = 104
+  end
+  object qrTipPag: TZQuery
+    Connection = conexaoBD
+    UpdateObject = upTipoPag
+    Active = True
+    SQL.Strings = (
+      'select * from TIPO_PAGAMENTO'
+    )
+    Params = <>
+    left = 224
+    top = 104
+    object qrTipPagCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrTipPagDESCRICAO: TStringField
+      FieldKind = fkData
+      FieldName = 'DESCRICAO'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 200
+    end
+    object qrTipPagTIPO: TStringField
+      FieldKind = fkData
+      FieldName = 'TIPO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+  end
+  object upTipoPag: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM TIPO_PAGAMENTO'
+      'WHERE'
+      '  TIPO_PAGAMENTO.CODIGO = :OLD_CODIGO'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO TIPO_PAGAMENTO'
+      '  (CODIGO, DESCRICAO, TIPO)'
+      'VALUES'
+      '  (:CODIGO, :DESCRICAO, :TIPO)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE TIPO_PAGAMENTO SET'
+      '  CODIGO = :CODIGO,'
+      '  DESCRICAO = :DESCRICAO,'
+      '  TIPO = :TIPO'
+      'WHERE'
+      '  TIPO_PAGAMENTO.CODIGO = :OLD_CODIGO'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    left = 336
+    top = 104
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'CODIGO'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'DESCRICAO'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'TIPO'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_CODIGO'
         ParamType = ptUnknown
       end>
   end
