@@ -9,7 +9,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, zplain, zcomponent, uFrmPrincipal, uFrmClientes, uFrmDataModule,
   ufrmlocalizaclientes, uFrmImpresaoClientes, uFrmContasAReceber,
-  uFrmTipoPagamento, uFrmFormasPagamento
+  uFrmTipoPagamento, uFrmFormasPagamento, uFrmUsuarios, uFrmAcessoUsuario
   { you can add units after this };
 
 {$R *.res}
@@ -26,6 +26,8 @@ begin
   Application.CreateForm(TFrmContasReceber, FrmContasReceber);
   Application.CreateForm(TFrmTipoPagamento, FrmTipoPagamento);
   Application.CreateForm(TFrmFormasPagamento, FrmFormasPagamento);
+  Application.CreateForm(TFrmUsuarios, FrmUsuarios);
+  Application.CreateForm(TFrmAcesso, FrmAcesso);
   Application.Run;
 end.
 

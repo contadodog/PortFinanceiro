@@ -46,7 +46,6 @@ begin
   //FrmDataM.qrClientes.ParamByName('pFiltro').AsString:= cbxFiltro.Items.Strings[cbxFiltro.ItemIndex];
   FrmDataM.qrClientes.ParamByName('pPesquisa').AsString:= '%' + EdtFiltro.Text + '%';
   FrmDataM.qrClientes.Open;
-
 end;
 
 procedure TFrmLocalizaClientes.DBGrid1DblClick(Sender: TObject);

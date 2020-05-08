@@ -1,23 +1,23 @@
-object FrmFormasPagamento: TFrmFormasPagamento
-  Left = 696
-  Height = 427
-  Top = 303
-  Width = 845
+object FrmUsuarios: TFrmUsuarios
+  Left = 863
+  Height = 318
+  Top = 326
+  Width = 585
   BorderIcons = [biSystemMenu]
-  Caption = 'Formas de Pagamento'
-  ClientHeight = 427
-  ClientWidth = 845
+  Caption = 'Cadastro de Usuarios'
+  ClientHeight = 318
+  ClientWidth = 585
   LCLVersion = '2.0.8.0'
   object Panel1: TPanel
     Left = 0
     Height = 80
     Top = 0
-    Width = 845
+    Width = 585
     Align = alTop
     ClientHeight = 80
-    ClientWidth = 845
+    ClientWidth = 585
     TabOrder = 0
-    object BtnIncFormPag: TBitBtn
+    object BtnIncUsuario: TBitBtn
       Left = 8
       Height = 64
       Top = 8
@@ -26,10 +26,10 @@ object FrmFormasPagamento: TFrmFormasPagamento
       Layout = blGlyphTop
       Images = ImageList1
       ImageIndex = 2
-      OnClick = BtnIncFormPagClick
+      OnClick = BtnIncUsuarioClick
       TabOrder = 0
     end
-    object BtnExcFormPag: TBitBtn
+    object BtnExcUsuario: TBitBtn
       Left = 96
       Height = 64
       Top = 8
@@ -38,10 +38,10 @@ object FrmFormasPagamento: TFrmFormasPagamento
       Layout = blGlyphTop
       Images = ImageList1
       ImageIndex = 3
-      OnClick = BtnExcFormPagClick
+      OnClick = BtnExcUsuarioClick
       TabOrder = 1
     end
-    object BtnAltFormPag: TBitBtn
+    object BtnAltUsuario: TBitBtn
       Left = 192
       Height = 64
       Top = 8
@@ -50,10 +50,10 @@ object FrmFormasPagamento: TFrmFormasPagamento
       Layout = blGlyphTop
       Images = ImageList1
       ImageIndex = 1
-      OnClick = BtnAltFormPagClick
+      OnClick = BtnAltUsuarioClick
       TabOrder = 2
     end
-    object BtnConFormPag: TBitBtn
+    object BtnConfUsuario: TBitBtn
       Left = 288
       Height = 64
       Top = 8
@@ -62,10 +62,10 @@ object FrmFormasPagamento: TFrmFormasPagamento
       Layout = blGlyphTop
       Images = ImageList1
       ImageIndex = 0
-      OnClick = BtnConFormPagClick
+      OnClick = BtnConfUsuarioClick
       TabOrder = 3
     end
-    object BtnCanFormPag: TBitBtn
+    object BtnCanUsuario: TBitBtn
       Left = 384
       Height = 64
       Top = 8
@@ -74,10 +74,10 @@ object FrmFormasPagamento: TFrmFormasPagamento
       Layout = blGlyphTop
       Images = ImageList1
       ImageIndex = 3
-      OnClick = BtnCanFormPagClick
+      OnClick = BtnCanUsuarioClick
       TabOrder = 4
     end
-    object BtnSairFormPag: TBitBtn
+    object BtnSairBtnAltUsuario: TBitBtn
       Left = 480
       Height = 64
       Top = 8
@@ -92,147 +92,71 @@ object FrmFormasPagamento: TFrmFormasPagamento
     end
   end
   object Label1: TLabel
-    Left = 28
+    Left = 8
     Height = 15
-    Top = 96
-    Width = 42
-    Caption = 'Código:'
+    Top = 92
+    Width = 43
+    Caption = 'Usuário:'
     ParentColor = False
   end
   object Label2: TLabel
-    Left = 16
+    Left = 288
     Height = 15
-    Top = 128
-    Width = 54
-    Caption = 'Descrição:'
+    Top = 92
+    Width = 35
+    Caption = 'Senha:'
     ParentColor = False
   end
-  object Label3: TLabel
-    Left = 47
-    Height = 15
-    Top = 160
-    Width = 23
-    Caption = 'Tipo'
-    ParentColor = False
-  end
-  object Label4: TLabel
-    Left = 432
-    Height = 15
-    Top = 160
-    Width = 22
-    Caption = 'Dias'
-    ParentColor = False
-  end
-  object cbxDiasVencFormPag: TDBComboBox
-    Left = 464
+  object DBEdit1: TDBEdit
+    Left = 56
     Height = 23
-    Top = 160
-    Width = 100
-    DataField = 'VENCIMENTO'
-    DataSource = FrmDataM.dsFormasPagamento
-    ItemHeight = 15
-    MaxLength = 0
+    Top = 88
+    Width = 208
+    DataField = 'NOME'
+    DataSource = FrmDataM.dsUsuarios
+    CharCase = ecNormal
+    MaxLength = 30
     TabOrder = 1
   end
-  object cbxNParcFormPag: TDBComboBox
-    Left = 312
+  object DBEdit2: TDBEdit
+    Left = 328
     Height = 23
-    Top = 160
-    Width = 60
-    DataField = 'PARCELAS'
-    DataSource = FrmDataM.dsFormasPagamento
-    ItemHeight = 15
-    MaxLength = 0
+    Top = 88
+    Width = 248
+    DataField = 'SENHA'
+    DataSource = FrmDataM.dsUsuarios
+    CharCase = ecNormal
+    MaxLength = 30
+    PasswordChar = '*'
     TabOrder = 2
-  end
-  object Label5: TLabel
-    Left = 240
-    Height = 15
-    Top = 162
-    Width = 57
-    Caption = 'NºParcelas'
-    ParentColor = False
   end
   object DBGrid1: TDBGrid
     Left = 0
-    Height = 134
-    Top = 293
-    Width = 845
+    Height = 198
+    Top = 120
+    Width = 585
     Align = alBottom
     Color = clWindow
     Columns = <    
       item
-        Title.Caption = 'ID'
-        Width = 30
-        FieldName = 'ID'
-      end    
-      item
-        Title.Caption = 'DESCRICAO'
+        Title.Caption = 'NOME'
         Width = 300
-        FieldName = 'DESCRICAO'
+        FieldName = 'NOME'
       end    
       item
-        Title.Caption = 'TIPO'
-        Width = 60
-        FieldName = 'TIPO'
-      end    
-      item
-        Title.Caption = 'VENCIMENTO'
-        Width = 90
-        FieldName = 'VENCIMENTO'
-      end    
-      item
-        Title.Caption = 'PARCELAS'
-        Width = 65
-        FieldName = 'PARCELAS'
+        Title.Caption = 'SENHA'
+        Width = 252
+        FieldName = 'SENHA'
+        DisplayFormat = '*'
       end>
-    DataSource = FrmDataM.dsFormasPagamento
+    DataSource = FrmDataM.dsUsuarios
     TabOrder = 3
-  end
-  object edtIdFormPag: TDBEdit
-    Left = 80
-    Height = 23
-    Top = 96
-    Width = 48
-    DataField = 'ID'
-    DataSource = FrmDataM.dsFormasPagamento
-    Alignment = taRightJustify
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 4
-  end
-  object EdtDescFormPag: TDBEdit
-    Left = 80
-    Height = 23
-    Top = 128
-    Width = 484
-    DataField = 'DESCRICAO'
-    DataSource = FrmDataM.dsFormasPagamento
-    CharCase = ecNormal
-    MaxLength = 100
-    TabOrder = 5
-  end
-  object DBComboBox1: TDBComboBox
-    Left = 80
-    Height = 23
-    Top = 160
-    Width = 100
-    DataField = 'TIPO'
-    DataSource = FrmDataM.dsFormasPagamento
-    ItemHeight = 15
-    Items.Strings = (
-      'A Vista'
-      'A Prazo'
-      'Parcelado'
-    )
-    MaxLength = 0
-    TabOrder = 6
   end
   object ImageList1: TImageList
     Height = 32
     Width = 32
-    left = 656
-    top = 128
+    left = 600
+    top = 248
     Bitmap = {
       4C69070000002000000020000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1132,5 +1056,9 @@ object FrmFormasPagamento: TFrmFormasPagamento
       0000000000000000000000000000000000000000000000000000000000004D4D
       4E259C9C9EE5707173E115151522
     }
+  end
+  object DataSource1: TDataSource
+    left = 422
+    top = 178
   end
 end

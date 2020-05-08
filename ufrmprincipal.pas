@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, Buttons,
-  Menus, uFrmClientes, uFrmTipoPagamento;
+  Menus, uFrmClientes, uFrmTipoPagamento, uFrmUsuarios;
 
 type
 
@@ -22,13 +22,17 @@ type
     Cadastros: TMenuItem;
     Clientes_Forne: TMenuItem;
     Financeiro: TMenuItem;
+    MenuItem1: TMenuItem;
     MenuTipoPagamento: TMenuItem;
     MenuFormasPagamento: TMenuItem;
     MenuPrincipal: TMainMenu;
     Panel1: TPanel;
     procedure BtnClientesClick(Sender: TObject);
+    procedure CadastrosClick(Sender: TObject);
     procedure Clientes_ForneClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure MenuFormasPagamentoClick(Sender: TObject);
+    procedure MenuItem1Click(Sender: TObject);
     procedure MenuTipoPagamentoClick(Sender: TObject);
     procedure Image1Click(Sender: TObject);
   private
@@ -42,7 +46,7 @@ var
 
 implementation
 
-uses uFrmFormasPagamento;
+uses uFrmFormasPagamento, uFrmAcessoUsuario;
 
 {$R *.lfm}
 
@@ -54,14 +58,30 @@ begin
      FrmClientes.ShowModal;
 end;
 
+procedure TFrmPrincipal.CadastrosClick(Sender: TObject);
+begin
+
+end;
+
+
 procedure TFrmPrincipal.Clientes_ForneClick(Sender: TObject);
 begin
   FrmClientes.ShowModal;
 end;
 
+procedure TFrmPrincipal.FormShow(Sender: TObject);
+begin
+  FrmAcesso.ShowModal;
+end;
+
 procedure TFrmPrincipal.MenuFormasPagamentoClick(Sender: TObject);
 begin
      FrmFormasPagamento.showModal;
+end;
+
+procedure TFrmPrincipal.MenuItem1Click(Sender: TObject);
+begin
+     FrmUsuarios.showModal;
 end;
 
 procedure TFrmPrincipal.MenuTipoPagamentoClick(Sender: TObject);

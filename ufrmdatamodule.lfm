@@ -384,4 +384,94 @@ object FrmDataM: TFrmDataM
         ParamType = ptUnknown
       end>
   end
+  object qrUsuarios: TZQuery
+    Connection = conexaoBD
+    UpdateObject = upUsuarios
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM USUARIOS'
+    )
+    Params = <>
+    left = 224
+    top = 280
+    object qrUsuariosCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrUsuariosNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+    object qrUsuariosSENHA: TStringField
+      FieldKind = fkData
+      FieldName = 'SENHA'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+  end
+  object upUsuarios: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM USUARIOS'
+      'WHERE'
+      '  USUARIOS.CODIGO = :OLD_CODIGO'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO USUARIOS'
+      '  (CODIGO, NOME, SENHA)'
+      'VALUES'
+      '  (:CODIGO, :NOME, :SENHA)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE USUARIOS SET'
+      '  CODIGO = :CODIGO,'
+      '  NOME = :NOME,'
+      '  SENHA = :SENHA'
+      'WHERE'
+      '  USUARIOS.CODIGO = :OLD_CODIGO'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    left = 336
+    top = 280
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'CODIGO'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'NOME'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'SENHA'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_CODIGO'
+        ParamType = ptUnknown
+      end>
+  end
+  object dsUsuarios: TDataSource
+    DataSet = qrUsuarios
+    left = 120
+    top = 280
+  end
 end

@@ -12,6 +12,7 @@ type
   { TFrmDataM }
 
   TFrmDataM = class(TDataModule)
+    dsUsuarios: TDataSource;
     dsFormasPagamento: TDataSource;
     dsTipoPagamento: TDataSource;
     dsPrincipal: TDataSource;
@@ -32,6 +33,9 @@ type
     qrTipPagCODIGO: TLongintField;
     qrTipPagDESCRICAO: TStringField;
     qrTipPagTIPO: TStringField;
+    qrUsuariosCODIGO: TLongintField;
+    qrUsuariosNOME: TStringField;
+    qrUsuariosSENHA: TStringField;
     tbClientes: TZQuery;
     tbClientesCIDADE: TStringField;
     tbClientesENDERECO: TStringField;
@@ -47,6 +51,8 @@ type
     upTipoPag: TZUpdateSQL;
     qrFormPag: TZQuery;
     upFormPag: TZUpdateSQL;
+    qrUsuarios: TZQuery;
+    upUsuarios: TZUpdateSQL;
   private
 
   public

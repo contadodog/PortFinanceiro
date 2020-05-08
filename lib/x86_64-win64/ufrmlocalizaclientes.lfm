@@ -1,7 +1,7 @@
 object FrmLocalizaClientes: TFrmLocalizaClientes
-  Left = 656
+  Left = 978
   Height = 369
-  Top = 312
+  Top = 169
   Width = 876
   BorderIcons = [biSystemMenu]
   Caption = 'Localização de Clientes'

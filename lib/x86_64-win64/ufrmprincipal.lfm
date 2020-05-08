@@ -8,6 +8,7 @@ object FrmPrincipal: TFrmPrincipal
   ClientHeight = 194
   ClientWidth = 605
   Menu = MenuPrincipal
+  OnShow = FormShow
   LCLVersion = '2.0.8.0'
   object Panel1: TPanel
     Left = 0
@@ -1531,6 +1532,7 @@ object FrmPrincipal: TFrmPrincipal
     top = 105
     object Cadastros: TMenuItem
       Caption = 'Cadastros'
+      OnClick = CadastrosClick
       object Clientes_Forne: TMenuItem
         Caption = 'Clientes/Fornecedores'
         OnClick = Clientes_ForneClick
@@ -1545,6 +1547,10 @@ object FrmPrincipal: TFrmPrincipal
           Caption = 'Formas de Pagamento'
           OnClick = MenuFormasPagamentoClick
         end
+      end
+      object MenuItem1: TMenuItem
+        Caption = 'Usuarios'
+        OnClick = MenuItem1Click
       end
     end
   end
