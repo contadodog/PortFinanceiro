@@ -12,6 +12,9 @@ type
   { TFrmDataM }
 
   TFrmDataM = class(TDataModule)
+    dsParcelasReceber: TDataSource;
+    dsContasReceber: TDataSource;
+    FrmDataM: TDataSource;
     dsUsuarios: TDataSource;
     dsFormasPagamento: TDataSource;
     dsTipoPagamento: TDataSource;
@@ -25,6 +28,14 @@ type
     qrClientesNOME: TStringField;
     qrClientesTELEFONE: TLongintField;
     qrClientesTELEFONE2: TLongintField;
+    qrContasReceberCODIGO: TLongintField;
+    qrContasReceberCODIGO_CLIENTE: TLongintField;
+    qrContasReceberCODIGO_FORMA_PAGAMENTO: TLongintField;
+    qrContasReceberCODIGO_TIPO_PAGAMENTO: TLongintField;
+    qrContasReceberNUMERO_DOC_DR: TSmallintField;
+    qrContasReceberPARCELAS: TLongintField;
+    qrContasReceberSTATUS: TStringField;
+    qrContasReceberVALOR: TFloatField;
     qrFormPagDESCRICAO: TStringField;
     qrFormPagID: TLongintField;
     qrFormPagPARCELAS: TSmallintField;
@@ -53,6 +64,15 @@ type
     upFormPag: TZUpdateSQL;
     qrUsuarios: TZQuery;
     upUsuarios: TZUpdateSQL;
+    upContasReceber: TZUpdateSQL;
+    qrContasReceber: TZQuery;
+    qrParcelasReceber: TZQuery;
+    qrParcelasReceberCODIGO: TLongintField;
+    qrParcelasReceberCODIGO_CONTAS_RECEBER: TSmallintField;
+    qrParcelasReceberDATA_VENCIMENTO: TDateField;
+    qrParcelasReceberPARCELA: TLongintField;
+    qrParcelasReceberVALOR: TLongintField;
+    upParcelasReceber: TZUpdateSQL;
   private
 
   public
@@ -63,6 +83,8 @@ var
   FrmDataM: TFrmDataM;
 
 implementation
+
+uses ufrmlocalizaclientes;
 
 {$R *.lfm}
 

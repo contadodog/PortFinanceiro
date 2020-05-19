@@ -2,20 +2,20 @@ object FrmFormasPagamento: TFrmFormasPagamento
   Left = 696
   Height = 427
   Top = 303
-  Width = 845
+  Width = 581
   BorderIcons = [biSystemMenu]
   Caption = 'Formas de Pagamento'
   ClientHeight = 427
-  ClientWidth = 845
+  ClientWidth = 581
   LCLVersion = '2.0.8.0'
   object Panel1: TPanel
     Left = 0
     Height = 80
     Top = 0
-    Width = 845
+    Width = 581
     Align = alTop
     ClientHeight = 80
-    ClientWidth = 845
+    ClientWidth = 581
     TabOrder = 0
     object BtnIncFormPag: TBitBtn
       Left = 8
@@ -155,9 +155,9 @@ object FrmFormasPagamento: TFrmFormasPagamento
   end
   object DBGrid1: TDBGrid
     Left = 0
-    Height = 134
-    Top = 293
-    Width = 845
+    Height = 235
+    Top = 192
+    Width = 581
     Align = alBottom
     Color = clWindow
     Columns = <    
@@ -187,6 +187,7 @@ object FrmFormasPagamento: TFrmFormasPagamento
         FieldName = 'PARCELAS'
       end>
     DataSource = FrmDataM.dsFormasPagamento
+    ReadOnly = True
     TabOrder = 3
   end
   object edtIdFormPag: TDBEdit

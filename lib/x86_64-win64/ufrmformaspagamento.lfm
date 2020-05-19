@@ -7,6 +7,7 @@ object FrmFormasPagamento: TFrmFormasPagamento
   Caption = 'Formas de Pagamento'
   ClientHeight = 427
   ClientWidth = 581
+  Enabled = False
   LCLVersion = '2.0.8.0'
   object Panel1: TPanel
     Left = 0
@@ -187,6 +188,7 @@ object FrmFormasPagamento: TFrmFormasPagamento
         FieldName = 'PARCELAS'
       end>
     DataSource = FrmDataM.dsFormasPagamento
+    ReadOnly = True
     TabOrder = 3
   end
   object edtIdFormPag: TDBEdit

@@ -32,7 +32,7 @@ var
 
 implementation
 
-uses uFrmClientes;
+uses uFrmClientes, uFrmContasAReceber;
 
 {$R *.lfm}
 
@@ -57,6 +57,7 @@ begin
      FrmClientes.edtTelefone2.Text:= IntToStr(FrmDataM.qrClientes.FieldByName('TELEFONE').AsInteger);
      FrmClientes.edtCidade.Text:= FrmDataM.qrClientes.FieldByName('CIDADE').AsString;
      FrmClientes.edtEstado.Text:= FrmDataM.qrClientes.FieldByName('ESTADO').AsString;
+     FrmContasReceber.edtClienteDR.Text:= FrmDataM.qrClientes.FieldByName('NOME').AsString;
      FrmLocalizaClientes.close;
 end;
 

@@ -2,17 +2,17 @@ object FrmLocalizaClientes: TFrmLocalizaClientes
   Left = 978
   Height = 369
   Top = 169
-  Width = 876
+  Width = 878
   BorderIcons = [biSystemMenu]
   Caption = 'Localização de Clientes'
   ClientHeight = 369
-  ClientWidth = 876
+  ClientWidth = 878
   LCLVersion = '2.0.8.0'
   object DBGrid1: TDBGrid
     Left = 0
     Height = 300
     Top = 69
-    Width = 876
+    Width = 878
     Align = alBottom
     Color = clWindow
     Columns = <    

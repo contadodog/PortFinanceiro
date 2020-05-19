@@ -41,6 +41,7 @@ object FrmPrincipal: TFrmPrincipal
     Layout = blGlyphTop
     Images = ImageList1
     ImageIndex = 0
+    OnClick = BtnReceberClick
     TabOrder = 1
   end
   object BtnPagar: TBitBtn

@@ -177,6 +177,7 @@ object FrmTipoPagamento: TFrmTipoPagamento
         FieldName = 'TIPO'
       end>
     DataSource = FrmDataM.dsTipoPagamento
+    ReadOnly = True
     TabOrder = 9
   end
   object ImageList1: TImageList

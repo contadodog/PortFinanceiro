@@ -4,12 +4,13 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="23">
+    <Units Count="24">
       <Unit0>
         <Filename Value="Crud.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="103"/>
+        <CursorPos Y="18"/>
+        <UsageCount Value="115"/>
       </Unit0>
       <Unit1>
         <Filename Value="ufrmprincipal.pas"/>
@@ -18,11 +19,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFrmPrincipal"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="64"/>
-        <CursorPos X="23" Y="74"/>
-        <UsageCount Value="103"/>
+        <TopLine Value="62"/>
+        <CursorPos X="32" Y="64"/>
+        <UsageCount Value="115"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -33,10 +33,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFrmClientes"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="34"/>
-        <CursorPos X="3" Y="57"/>
-        <UsageCount Value="103"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="52"/>
+        <CursorPos X="5" Y="69"/>
+        <UsageCount Value="115"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="ufrmdatamodule.pas"/>
@@ -46,9 +48,9 @@
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="uFrmDataModule"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="41"/>
-        <CursorPos X="13" Y="53"/>
-        <UsageCount Value="98"/>
+        <TopLine Value="4"/>
+        <CursorPos X="156" Y="19"/>
+        <UsageCount Value="110"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -59,9 +61,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="20"/>
-        <CursorPos X="56" Y="52"/>
-        <UsageCount Value="78"/>
+        <TopLine Value="33"/>
+        <CursorPos X="34" Y="46"/>
+        <UsageCount Value="90"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit4>
@@ -75,7 +77,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="18"/>
         <CursorPos X="27" Y="34"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="70"/>
       </Unit5>
       <Unit6>
         <Filename Value="ufrmcontasareceber.pas"/>
@@ -84,9 +86,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFrmContasAReceber"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="36" Y="24"/>
-        <UsageCount Value="44"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="41"/>
+        <CursorPos X="62" Y="82"/>
+        <UsageCount Value="56"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="ufrmtipopagamento.pas"/>
@@ -98,7 +104,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="90"/>
         <CursorPos Y="114"/>
-        <UsageCount Value="44"/>
+        <UsageCount Value="56"/>
       </Unit7>
       <Unit8>
         <Filename Value="ufrmformaspagamento.pas"/>
@@ -108,8 +114,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFrmFormasPagamento"/>
         <TopLine Value="43"/>
-        <CursorPos X="6" Y="60"/>
-        <UsageCount Value="38"/>
+        <CursorPos X="67" Y="36"/>
+        <UsageCount Value="50"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit8>
@@ -123,205 +129,229 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="85"/>
         <CursorPos X="39" Y="95"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="44"/>
       </Unit9>
       <Unit10>
+        <Filename Value="ufrmacessousuario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmAcesso"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmAcessoUsuario"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="76" Y="50"/>
+        <UsageCount Value="34"/>
+      </Unit10>
+      <Unit11>
         <Filename Value="..\zeosdbo-7.2.6.1-stable\src\component\ZAbstractRODataset.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2399"/>
         <CursorPos Y="2424"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit10>
-      <Unit11>
+      </Unit11>
+      <Unit12>
         <Filename Value="..\zeosdbo-7.2.6.1-stable\src\component\ZAbstractDataset.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="429"/>
         <CursorPos Y="457"/>
-        <UsageCount Value="9"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit11>
-      <Unit12>
-        <Filename Value="..\zeosdbo-7.2.6.1-stable\src\dbc\ZDbcInterbase6Utils.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="884"/>
-        <CursorPos Y="900"/>
         <UsageCount Value="8"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit12>
       <Unit13>
-        <Filename Value="ufrmclientes.lfm"/>
+        <Filename Value="..\zeosdbo-7.2.6.1-stable\src\dbc\ZDbcInterbase6Utils.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
+        <TopLine Value="884"/>
+        <CursorPos Y="900"/>
+        <UsageCount Value="7"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit13>
       <Unit14>
-        <Filename Value="ufrmlocalizaclientes.lfm"/>
+        <Filename Value="ufrmclientes.lfm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit14>
       <Unit15>
-        <Filename Value="ufrmcontasareceber.lfm"/>
+        <Filename Value="ufrmlocalizaclientes.lfm"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="99" Y="12"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit15>
       <Unit16>
-        <Filename Value="ufrmdatamodule.lfm"/>
+        <Filename Value="ufrmcontasareceber.lfm"/>
         <EditorIndex Value="-1"/>
+        <CursorPos X="61" Y="11"/>
         <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit16>
       <Unit17>
-        <Filename Value="ufrmformaspagamento.lfm"/>
+        <Filename Value="ufrmdatamodule.lfm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit17>
       <Unit18>
-        <Filename Value="ufrmimpresaoclientes.lfm"/>
+        <Filename Value="ufrmformaspagamento.lfm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit18>
       <Unit19>
-        <Filename Value="ufrmprincipal.lfm"/>
+        <Filename Value="ufrmimpresaoclientes.lfm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit19>
       <Unit20>
-        <Filename Value="ufrmtipopagamento.lfm"/>
+        <Filename Value="ufrmprincipal.lfm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit20>
       <Unit21>
-        <Filename Value="Crud.lpi"/>
+        <Filename Value="ufrmtipopagamento.lfm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
-        <DefaultSyntaxHighlighter Value="XML"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit21>
       <Unit22>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FrmAcesso"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uFrmAcessoUsuario"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="28"/>
-        <CursorPos X="14" Y="50"/>
-        <UsageCount Value="22"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <Filename Value="Crud.lpi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
       </Unit22>
+      <Unit23>
+        <Filename Value="..\zeosdbo-7.2.6.1-stable\src\plain\ZPlainLoader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="223"/>
+        <CursorPos X="106" Y="239"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit23>
     </Units>
-    <JumpHistory Count="26" HistoryIndex="25">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="ufrmprincipal.pas"/>
-        <Caret Line="68" Column="49" TopLine="45"/>
+        <Filename Value="ufrmclientes.pas"/>
+        <Caret Line="69" Column="5" TopLine="52"/>
       </Position1>
       <Position2>
         <Filename Value="ufrmprincipal.pas"/>
-        <Caret Line="57" TopLine="45"/>
+        <Caret Line="83" Column="38" TopLine="70"/>
       </Position2>
       <Position3>
-        <Filename Value="ufrmdatamodule.pas"/>
-        <Caret Line="51" Column="34" TopLine="37"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="52" Column="94" TopLine="34"/>
       </Position3>
       <Position4>
-        <Filename Value="ufrmdatamodule.pas"/>
-        <Caret Line="52" Column="34" TopLine="37"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="53" Column="94" TopLine="35"/>
       </Position4>
       <Position5>
-        <Filename Value="ufrmdatamodule.pas"/>
-        <Caret Line="53" Column="34" TopLine="37"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="52" Column="94" TopLine="34"/>
       </Position5>
       <Position6>
         <Filename Value="ufrmdatamodule.pas"/>
-        <Caret Line="54" Column="34" TopLine="38"/>
+        <Caret Line="14" Column="12"/>
       </Position6>
       <Position7>
-        <Filename Value="ufrmdatamodule.pas"/>
-        <Caret Line="55" Column="34" TopLine="39"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="55" Column="55" TopLine="53"/>
       </Position7>
       <Position8>
-        <Filename Value="ufrmdatamodule.pas"/>
-        <Caret Line="56" Column="34" TopLine="40"/>
+        <Filename Value="ufrmformaspagamento.pas"/>
+        <Caret Line="67" Column="32" TopLine="43"/>
       </Position8>
       <Position9>
-        <Filename Value="ufrmprincipal.pas"/>
-        <Caret Line="64" TopLine="47"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="125" Column="36" TopLine="102"/>
       </Position9>
       <Position10>
         <Filename Value="ufrmformaspagamento.pas"/>
-        <Caret Line="96" Column="52" TopLine="93"/>
+        <Caret Line="93" Column="121" TopLine="77"/>
       </Position10>
       <Position11>
-        <Filename Value="ufrmacessousuario.pas"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="134" Column="38" TopLine="110"/>
       </Position11>
       <Position12>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="38" Column="6" TopLine="8"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="149" Column="33" TopLine="115"/>
       </Position12>
       <Position13>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="42" Column="64" TopLine="18"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="146" Column="44" TopLine="125"/>
       </Position13>
       <Position14>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="41" Column="64" TopLine="17"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="44" Column="52" TopLine="25"/>
       </Position14>
       <Position15>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="40" Column="64" TopLine="16"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="53" Column="54" TopLine="36"/>
       </Position15>
       <Position16>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="41" Column="64" TopLine="16"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="76" Column="29" TopLine="56"/>
       </Position16>
       <Position17>
-        <Filename Value="ufrmprincipal.pas"/>
-        <Caret Line="69" Column="61" TopLine="35"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="77" Column="29" TopLine="57"/>
       </Position17>
       <Position18>
-        <Filename Value="ufrmprincipal.pas"/>
-        <Caret Line="75" Column="21" TopLine="64"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="76" Column="29" TopLine="56"/>
       </Position18>
       <Position19>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="39" Column="25" TopLine="18"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="58" Column="99" TopLine="56"/>
       </Position19>
       <Position20>
-        <Filename Value="ufrmprincipal.pas"/>
-        <Caret Line="75" Column="26" TopLine="64"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="76" Column="63" TopLine="59"/>
       </Position20>
       <Position21>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="42" Column="45" TopLine="18"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="99" Column="51" TopLine="76"/>
       </Position21>
       <Position22>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="44" Column="7" TopLine="20"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="93" Column="41" TopLine="76"/>
       </Position22>
       <Position23>
-        <Filename Value="ufrmprincipal.pas"/>
-        <Caret Line="74" Column="18" TopLine="40"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="85" Column="73" TopLine="76"/>
       </Position23>
       <Position24>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="50" Column="53" TopLine="20"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="54" Column="35" TopLine="36"/>
       </Position24>
       <Position25>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="54" Column="15" TopLine="21"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="121" Column="33" TopLine="105"/>
       </Position25>
       <Position26>
-        <Filename Value="ufrmacessousuario.pas"/>
-        <Caret Line="47" Column="9" TopLine="25"/>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="86" TopLine="70"/>
       </Position26>
+      <Position27>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="85" Column="73" TopLine="67"/>
+      </Position27>
+      <Position28>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="76" Column="57" TopLine="60"/>
+      </Position28>
+      <Position29>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="79" Column="2" TopLine="79"/>
+      </Position29>
+      <Position30>
+        <Filename Value="ufrmcontasareceber.pas"/>
+        <Caret Line="90" Column="48" TopLine="110"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

@@ -28,6 +28,7 @@ type
     MenuPrincipal: TMainMenu;
     Panel1: TPanel;
     procedure BtnClientesClick(Sender: TObject);
+    procedure BtnReceberClick(Sender: TObject);
     procedure CadastrosClick(Sender: TObject);
     procedure Clientes_ForneClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -46,7 +47,7 @@ var
 
 implementation
 
-uses uFrmFormasPagamento, uFrmAcessoUsuario;
+uses uFrmFormasPagamento, uFrmAcessoUsuario, uFrmContasAReceber;
 
 {$R *.lfm}
 
@@ -56,6 +57,11 @@ uses uFrmFormasPagamento, uFrmAcessoUsuario;
 procedure TFrmPrincipal.BtnClientesClick(Sender: TObject);
 begin
      FrmClientes.ShowModal;
+end;
+
+procedure TFrmPrincipal.BtnReceberClick(Sender: TObject);
+begin
+     FrmContasReceber.ShowModal;
 end;
 
 procedure TFrmPrincipal.CadastrosClick(Sender: TObject);

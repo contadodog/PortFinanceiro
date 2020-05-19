@@ -1,6 +1,6 @@
 object FrmDataM: TFrmDataM
   OldCreateOrder = False
-  Height = 397
+  Height = 536
   HorizontalOffset = 789
   VerticalOffset = 258
   Width = 596
@@ -387,12 +387,13 @@ object FrmDataM: TFrmDataM
   object qrUsuarios: TZQuery
     Connection = conexaoBD
     UpdateObject = upUsuarios
+    Active = True
     SQL.Strings = (
       'SELECT * FROM USUARIOS'
     )
     Params = <>
     left = 224
-    top = 280
+    top = 264
     object qrUsuariosCODIGO: TLongintField
       FieldKind = fkData
       FieldName = 'CODIGO'
@@ -445,7 +446,7 @@ object FrmDataM: TFrmDataM
     )
     UseSequenceFieldForRefreshSQL = False
     left = 336
-    top = 280
+    top = 264
     ParamData = <    
       item
         DataType = ftUnknown
@@ -471,6 +472,166 @@ object FrmDataM: TFrmDataM
   object dsUsuarios: TDataSource
     DataSet = qrUsuarios
     left = 120
-    top = 280
+    top = 264
+  end
+  object dsContasReceber: TDataSource
+    DataSet = qrContasReceber
+    left = 120
+    top = 336
+  end
+  object upContasReceber: TZUpdateSQL
+    UseSequenceFieldForRefreshSQL = False
+    left = 336
+    top = 336
+  end
+  object qrContasReceber: TZQuery
+    Connection = conexaoBD
+    UpdateObject = upContasReceber
+    SQL.Strings = (
+      'select * from CONTAS_RECEBER'
+    )
+    Params = <>
+    left = 224
+    top = 336
+    object qrContasReceberCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrContasReceberCODIGO_CLIENTE: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO_CLIENTE'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrContasReceberCODIGO_TIPO_PAGAMENTO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO_TIPO_PAGAMENTO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qrContasReceberCODIGO_FORMA_PAGAMENTO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO_FORMA_PAGAMENTO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qrContasReceberSTATUS: TStringField
+      FieldKind = fkData
+      FieldName = 'STATUS'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 4
+    end
+    object qrContasReceberPARCELAS: TLongintField
+      FieldKind = fkData
+      FieldName = 'PARCELAS'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qrContasReceberNUMERO_DOC_DR: TSmallintField
+      FieldKind = fkData
+      FieldName = 'NUMERO_DOC_DR'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrContasReceberVALOR: TFloatField
+      FieldKind = fkData
+      FieldName = 'VALOR'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+  end
+  object dsParcelasReceber: TDataSource
+    left = 120
+    top = 400
+  end
+  object qrParcelasReceber: TZQuery
+    Connection = conexaoBD
+    SQL.Strings = (
+      'select * from P_CONTAS_RECEBER'
+    )
+    Params = <>
+    DataSource = dsParcelasReceber
+    left = 224
+    top = 400
+    object qrParcelasReceberCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrParcelasReceberPARCELA: TLongintField
+      FieldKind = fkData
+      FieldName = 'PARCELA'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrParcelasReceberVALOR: TLongintField
+      FieldKind = fkData
+      FieldName = 'VALOR'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrParcelasReceberDATA_VENCIMENTO: TDateField
+      FieldKind = fkData
+      FieldName = 'DATA_VENCIMENTO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qrParcelasReceberCODIGO_CONTAS_RECEBER: TSmallintField
+      FieldKind = fkData
+      FieldName = 'CODIGO_CONTAS_RECEBER'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+  end
+  object upParcelasReceber: TZUpdateSQL
+    UseSequenceFieldForRefreshSQL = False
+    left = 336
+    top = 400
   end
 end

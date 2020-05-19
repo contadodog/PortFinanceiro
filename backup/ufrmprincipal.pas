@@ -72,7 +72,6 @@ end;
 procedure TFrmPrincipal.FormShow(Sender: TObject);
 begin
   FrmAcesso.ShowModal;
-  FrmPrincipal.Visible:=false;
 end;
 
 procedure TFrmPrincipal.MenuFormasPagamentoClick(Sender: TObject);

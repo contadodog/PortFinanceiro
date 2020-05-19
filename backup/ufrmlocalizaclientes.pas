@@ -32,7 +32,7 @@ var
 
 implementation
 
-uses uFrmClientes;
+uses uFrmClientes, uFrmContasAReceber;
 
 {$R *.lfm}
 
@@ -46,7 +46,6 @@ begin
   //FrmDataM.qrClientes.ParamByName('pFiltro').AsString:= cbxFiltro.Items.Strings[cbxFiltro.ItemIndex];
   FrmDataM.qrClientes.ParamByName('pPesquisa').AsString:= '%' + EdtFiltro.Text + '%';
   FrmDataM.qrClientes.Open;
-
 end;
 
 procedure TFrmLocalizaClientes.DBGrid1DblClick(Sender: TObject);
@@ -58,6 +57,7 @@ begin
      FrmClientes.edtTelefone2.Text:= IntToStr(FrmDataM.qrClientes.FieldByName('TELEFONE').AsInteger);
      FrmClientes.edtCidade.Text:= FrmDataM.qrClientes.FieldByName('CIDADE').AsString;
      FrmClientes.edtEstado.Text:= FrmDataM.qrClientes.FieldByName('ESTADO').AsString;
+     FrmContasReceber.edtClienteDR.Text:= FrmDataM.qrClientes.FieldByName('NOME').AsString;
      FrmLocalizaClientes.close;
 end;
 
